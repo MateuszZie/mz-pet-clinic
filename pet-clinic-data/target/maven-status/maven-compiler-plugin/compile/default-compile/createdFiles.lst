@@ -1,0 +1,5 @@
+org\mateuszziebura\mzpetclinic\Person.class
+org\mateuszziebura\mzpetclinic\Pet.class
+org\mateuszziebura\mzpetclinic\Owner.class
+org\mateuszziebura\mzpetclinic\Vet.class
+org\mateuszziebura\mzpetclinic\PetType.class
