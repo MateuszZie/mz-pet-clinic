@@ -14,7 +14,7 @@
 	</parent>
 	<groupId>org.mateuszziebura</groupId>
 	<artifactId>mz-pet-clinic</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.1</version>
 	<name>mz-pet-clinic</name>
 	<description>MZ Pet Clinic Project</description>
 	<properties>
@@ -48,7 +48,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/MateuszZie/mz-pet-clinic.git</developerConnection>
-		<tag>mz-pet-clinic-0.0.3</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
