@@ -1,4 +1,4 @@
-package org.mateuszziebura.mzpetclinic;
+package org.mateuszziebura.mzpetclinic.model;
 
 import lombok.Data;
 
