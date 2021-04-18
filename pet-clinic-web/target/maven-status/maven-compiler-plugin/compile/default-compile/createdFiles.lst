@@ -1,1 +1,5 @@
+org\mateuszziebura\mzpetclinic\controllers\VetController.class
+org\mateuszziebura\mzpetclinic\controllers\IndexController.class
+org\mateuszziebura\mzpetclinic\controllers\OwnerController.class
 org\mateuszziebura\mzpetclinic\MzPetClinicApplication.class
+org\mateuszziebura\mzpetclinic\bootstrap\DataLoader.class
