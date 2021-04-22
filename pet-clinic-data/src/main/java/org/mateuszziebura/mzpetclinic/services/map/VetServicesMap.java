@@ -1,6 +1,5 @@
 package org.mateuszziebura.mzpetclinic.services.map;
 
-import org.mateuszziebura.mzpetclinic.model.Speciality;
 import org.mateuszziebura.mzpetclinic.model.Vet;
 import org.mateuszziebura.mzpetclinic.services.SpecialityService;
 import org.mateuszziebura.mzpetclinic.services.VetServices;
@@ -24,14 +23,14 @@ public class VetServicesMap extends AbstractMapService<Vet, Long> implements Vet
 
     @Override
     public Vet save(Vet object) {
-        if(object.getSpecialities().size()>0){
-            object.getSpecialities().forEach(speciality -> {
-                if(speciality.getId()==null){
-                    Speciality savedSpeciality = specialityService.save(speciality);
-                    speciality.setId(savedSpeciality.getId());
-                }
-            });
-        }
+//        if(object.getSpecialities().size()>0){
+//            object.getSpecialities().forEach(speciality -> {
+//                if(speciality.getId()==null){
+//                    Speciality savedSpeciality = specialityService.save(speciality);
+//                    speciality.setId(savedSpeciality.getId());
+//                }
+//            });
+//        }
         return super.save(object);
     }
 

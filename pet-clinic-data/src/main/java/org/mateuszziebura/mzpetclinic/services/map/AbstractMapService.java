@@ -2,7 +2,10 @@ package org.mateuszziebura.mzpetclinic.services.map;
 
 import org.mateuszziebura.mzpetclinic.model.BaseEntity;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
@@ -14,9 +17,9 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
     }
     T save(T object){
         if(object!=null){
-            if(object.getId()==null){
-                object.setId(getNextID());
-            }
+//            if(object.getId()==null){
+//                object.setId(getNextID());
+//            }
             map.put(object.getId(), object);
         }else {
             throw new RuntimeException("Object cannot by null");
@@ -33,13 +36,13 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
      map.remove(id);
     }
 
-    private Long getNextID(){
-        Long nextId = null;
-        try {
-            nextId = Collections.max(map.keySet())+1;
-        }catch (NoSuchElementException e){
-            nextId = 1L;
-        }
-        return nextId;
-    }
+//    private Long getNextID(){
+//        Long nextId = null;
+//        try {
+//            nextId = Collections.max(map.keySet())+1;
+//        }catch (NoSuchElementException e){
+//            nextId = 1L;
+//        }
+//        return nextId;
+//    }
 }

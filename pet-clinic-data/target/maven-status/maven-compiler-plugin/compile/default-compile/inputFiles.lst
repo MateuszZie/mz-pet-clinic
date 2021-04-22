@@ -1,11 +1,17 @@
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Owner.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\PetServices.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\map\VetServicesMap.java
+C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Visit.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\BaseEntity.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\CrudService.java
+C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\SpecialityService.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\OwnerServices.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Person.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\map\PetServicesMap.java
+C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\map\PetTypeServiceMap.java
+C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\PetTypeService.java
+C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\map\SpecialityServiceMap.java
+C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Speciality.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\VetServices.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\PetType.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Vet.java

@@ -1,8 +1,10 @@
 package org.mateuszziebura.mzpetclinic.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class PetType extends BaseEntity{
 
     private String name;

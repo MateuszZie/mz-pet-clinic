@@ -1,4 +1,6 @@
 org\mateuszziebura\mzpetclinic\services\CrudService.class
+org\mateuszziebura\mzpetclinic\model\Visit.class
+org\mateuszziebura\mzpetclinic\model\Speciality.class
 org\mateuszziebura\mzpetclinic\services\map\OwnerServicesMap.class
 org\mateuszziebura\mzpetclinic\services\map\PetServicesMap.class
 org\mateuszziebura\mzpetclinic\model\BaseEntity.class
@@ -7,8 +9,12 @@ org\mateuszziebura\mzpetclinic\services\map\VetServicesMap.class
 org\mateuszziebura\mzpetclinic\services\VetServices.class
 org\mateuszziebura\mzpetclinic\services\OwnerServices.class
 org\mateuszziebura\mzpetclinic\services\PetServices.class
+org\mateuszziebura\mzpetclinic\services\SpecialityService.class
 org\mateuszziebura\mzpetclinic\model\Vet.class
+org\mateuszziebura\mzpetclinic\services\map\SpecialityServiceMap.class
+org\mateuszziebura\mzpetclinic\services\PetTypeService.class
 org\mateuszziebura\mzpetclinic\model\Pet.class
 org\mateuszziebura\mzpetclinic\model\Person.class
 org\mateuszziebura\mzpetclinic\model\PetType.class
 org\mateuszziebura\mzpetclinic\model\Owner.class
+org\mateuszziebura\mzpetclinic\services\map\PetTypeServiceMap.class

@@ -1,11 +1,13 @@
 package org.mateuszziebura.mzpetclinic.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
+@Getter
+@Setter
 public class Vet extends Person{
 
     private Set<Speciality> specialities = new HashSet<>();

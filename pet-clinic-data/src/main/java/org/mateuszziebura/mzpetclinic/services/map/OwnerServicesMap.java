@@ -1,7 +1,6 @@
 package org.mateuszziebura.mzpetclinic.services.map;
 
 import org.mateuszziebura.mzpetclinic.model.Owner;
-import org.mateuszziebura.mzpetclinic.model.Pet;
 import org.mateuszziebura.mzpetclinic.services.OwnerServices;
 import org.mateuszziebura.mzpetclinic.services.PetServices;
 import org.mateuszziebura.mzpetclinic.services.PetTypeService;
@@ -38,26 +37,27 @@ public class OwnerServicesMap extends AbstractMapService<Owner, Long> implements
 
     @Override
     public Owner save(Owner object) {
-        if(object!=null){
-            if(object.getPets()!=null){
-                object.getPets().forEach(pet -> {
-                    if(pet.getPetType()!=null){
-                        if(pet.getPetType().getId()==null){
-                            pet.setPetType(petTypeService.save(pet.getPetType()));
-                        }
-                    }else {
-                        throw new RuntimeException("Pet type required");
-                    }
-                    if(pet.getId()==null){
-                        Pet savedPet = petServices.save(pet);
-                        pet.setId(savedPet.getId());
-                    }
-                });
-            }
+//        if(object!=null){
+//            if(object.getPets()!=null){
+//                object.getPets().forEach(pet -> {
+//                    if(pet.getPetType()!=null){
+//                        if(pet.getPetType().getId()==null){
+//                            pet.setPetType(petTypeService.save(pet.getPetType()));
+//                        }
+//                    }else {
+//                        throw new RuntimeException("Pet type required");
+//                    }
+//                    petServices.save(pet);
+//                    if(pet.getId()==null){
+//                        Pet savedPet = petServices.save(pet);
+//                        pet.setId(savedPet.getId());
+//                    }
+//                });
+//            }
             return super.save(object);
-        }else {
-            return null;
-        }
+//        }else {
+//            return null;
+//        }
 
     }
 
