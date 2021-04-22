@@ -1,10 +1,7 @@
 package org.mateuszziebura.mzpetclinic.bootstrap;
 
 import org.mateuszziebura.mzpetclinic.model.*;
-import org.mateuszziebura.mzpetclinic.services.OwnerServices;
-import org.mateuszziebura.mzpetclinic.services.PetTypeService;
-import org.mateuszziebura.mzpetclinic.services.SpecialityService;
-import org.mateuszziebura.mzpetclinic.services.VetServices;
+import org.mateuszziebura.mzpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,12 +14,16 @@ public class DataLoader implements CommandLineRunner {
     private final VetServices vetServices;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitServices visitServices;
+    private final PetServices petServices;
 
-    public DataLoader(OwnerServices ownerServices, VetServices vetServices, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerServices ownerServices, VetServices vetServices, PetTypeService petTypeService, SpecialityService specialityService, VisitServices visitServices, PetServices petServices) {
         this.ownerServices = ownerServices;
         this.vetServices = vetServices;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitServices = visitServices;
+        this.petServices = petServices;
     }
 
     @Override
@@ -83,7 +84,15 @@ public class DataLoader implements CommandLineRunner {
         fionaCat.setPetType(saveCatPetType);
         owner2.getPets().add(fionaCat);
 
+
         ownerServices.save(owner2);
+
+        Visit fionaVisit = new Visit();
+        fionaVisit.setDate(LocalDate.now());
+        fionaVisit.setDescription("sneeze Cat");
+        fionaVisit.setPet(fionaCat);
+
+        visitServices.save(fionaVisit);
 
         System.out.println("Loaded Owners....");
 
