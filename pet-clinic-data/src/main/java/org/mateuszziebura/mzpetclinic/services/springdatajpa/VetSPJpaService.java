@@ -15,8 +15,8 @@ public class VetSPJpaService implements VetServices {
 
     private final VetRepositories vetRepositories;
 
-    public VetSPJpaService(VetRepositories ownerRepositories) {
-        this.vetRepositories = ownerRepositories;
+    public VetSPJpaService(VetRepositories vetRepositories) {
+        this.vetRepositories = vetRepositories;
     }
 
     @Override
@@ -31,9 +31,9 @@ public class VetSPJpaService implements VetServices {
 
     @Override
     public Set<Vet> findAll() {
-        Set<Vet> owners = new HashSet<>();
-        vetRepositories.findAll().forEach(owners::add);
-        return owners;
+        Set<Vet> vets = new HashSet<>();
+        vetRepositories.findAll().forEach(vets::add);
+        return vets;
     }
 
     @Override
