@@ -2,7 +2,7 @@ package org.mateuszziebura.mzpetclinic.services.map;
 
 import org.mateuszziebura.mzpetclinic.model.Owner;
 import org.mateuszziebura.mzpetclinic.model.Pet;
-import org.mateuszziebura.mzpetclinic.services.OwnerServices;
+import org.mateuszziebura.mzpetclinic.services.OwnerService;
 import org.mateuszziebura.mzpetclinic.services.PetServices;
 import org.mateuszziebura.mzpetclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
@@ -13,7 +13,7 @@ import java.util.Set;
 
 @Service
 @Profile({"default","map"})
-public class OwnerServicesMap extends AbstractMapService<Owner, Long> implements OwnerServices {
+public class OwnerServicesMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;
     private final PetServices petServices;

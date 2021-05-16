@@ -10,13 +10,13 @@ import java.time.LocalDate;
 @Component
 public class DataLoader implements CommandLineRunner {
 
-    private final OwnerServices ownerServices;
+    private final OwnerService ownerServices;
     private final VetServices vetServices;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
     private final VisitServices visitServices;
 
-    public DataLoader(OwnerServices ownerServices, VetServices vetServices, PetTypeService petTypeService, SpecialityService specialityService, VisitServices visitServices) {
+    public DataLoader(OwnerService ownerServices, VetServices vetServices, PetTypeService petTypeService, SpecialityService specialityService, VisitServices visitServices) {
         this.ownerServices = ownerServices;
         this.vetServices = vetServices;
         this.petTypeService = petTypeService;

@@ -2,7 +2,7 @@ package org.mateuszziebura.mzpetclinic.services.springdatajpa;
 
 import org.mateuszziebura.mzpetclinic.model.Owner;
 import org.mateuszziebura.mzpetclinic.repositories.OwnerRepositories;
-import org.mateuszziebura.mzpetclinic.services.OwnerServices;
+import org.mateuszziebura.mzpetclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Service
 @Profile("springDataJpa")
-public class OwnerSPJpaService implements OwnerServices {
+public class OwnerSPJpaService implements OwnerService {
 
     private final OwnerRepositories ownerRepositories;
 
