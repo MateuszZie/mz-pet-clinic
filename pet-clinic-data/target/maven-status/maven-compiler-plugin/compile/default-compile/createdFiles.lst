@@ -24,7 +24,7 @@ org\mateuszziebura\mzpetclinic\services\map\PetServicesMap.class
 org\mateuszziebura\mzpetclinic\model\BaseEntity.class
 org\mateuszziebura\mzpetclinic\services\VisitServices.class
 org\mateuszziebura\mzpetclinic\repositories\OwnerRepositories.class
-org\mateuszziebura\mzpetclinic\services\OwnerServices.class
+org\mateuszziebura\mzpetclinic\services\OwnerService.class
 org\mateuszziebura\mzpetclinic\services\SpecialityService.class
 org\mateuszziebura\mzpetclinic\services\map\SpecialityServiceMap.class
 org\mateuszziebura\mzpetclinic\services\PetTypeService.class

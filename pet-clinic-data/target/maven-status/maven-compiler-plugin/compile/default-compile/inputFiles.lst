@@ -3,7 +3,6 @@ C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateus
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\springdatajpa\VisitSPJpaService.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\BaseEntity.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\SpecialityService.java
-C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\OwnerServices.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\VisitServices.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Person.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\repositories\OwnerRepositories.java
@@ -17,6 +16,7 @@ C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateus
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\springdatajpa\OwnerSPJpaService.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Owner.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\PetServices.java
+C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\OwnerService.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\repositories\VetRepositories.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\services\map\VetServicesMap.java
 C:\Users\Mateusz\Spring 5\mz-pet-clinic\pet-clinic-data\src\main\java\org\mateuszziebura\mzpetclinic\model\Visit.java
