@@ -67,6 +67,7 @@ public class PetController {
             return VIEWS_PETS_CREATE_OR_UPDATE_FORM;
         }
         else {
+            pet.setOwner(owner);
             petServices.save(pet);
             return "redirect:/owners/" +owner.getId();
         }
@@ -81,11 +82,12 @@ public class PetController {
     public String processUpdateForm(@Valid Pet pet, BindingResult result, Owner owner, Model model) {
         if (result.hasErrors()) {
             pet.setOwner(owner);
+            System.out.println("bug " +pet.getOwner());
             model.addAttribute("pet", pet);
             return VIEWS_PETS_CREATE_OR_UPDATE_FORM;
         }
         else {
-            owner.getPets().add(pet);
+            pet.setOwner(owner);
             petServices.save(pet);
             return "redirect:/owners/" +owner.getId();
         }
