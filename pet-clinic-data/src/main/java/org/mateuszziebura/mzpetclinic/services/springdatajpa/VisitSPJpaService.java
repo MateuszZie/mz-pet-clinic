@@ -1,6 +1,7 @@
 package org.mateuszziebura.mzpetclinic.services.springdatajpa;
 
 import org.mateuszziebura.mzpetclinic.model.Visit;
+import org.mateuszziebura.mzpetclinic.repositories.PetRepositories;
 import org.mateuszziebura.mzpetclinic.repositories.VisitRepositories;
 import org.mateuszziebura.mzpetclinic.services.VisitServices;
 import org.springframework.context.annotation.Profile;
@@ -14,9 +15,16 @@ import java.util.Set;
 public class VisitSPJpaService implements VisitServices {
 
     private final VisitRepositories visitRepositories;
+    private final PetRepositories petRepositories;
 
-    public VisitSPJpaService(VisitRepositories visitRepositories) {
+    public VisitSPJpaService(VisitRepositories visitRepositories, PetRepositories petRepositories) {
         this.visitRepositories = visitRepositories;
+        this.petRepositories = petRepositories;
+    }
+
+    @Override
+    public Set<Visit> findByPetId(Long petId) {
+        return petRepositories.findById(petId).orElse(null).getVisits();
     }
 
     @Override
